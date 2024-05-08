@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Karthik Reddy - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">My Work</a></li>
+                <li><a href="#portfolio">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Mechanical Design Engineer</p>
+            <h1>Hi, I'm <span> Sai Karthik Reddy</span><br></h1>
+            <p>Specialized in Product Design, Analysis and Testing</p>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am an innovative Mechanical Engineer with a Master’s degree in Automation and Robotics from the University at Buffalo, and a Bachelor's in Mechanical Engineering from Koneru Lakshmaiah Education Foundation. Specializing in engineering design and process improvement, I have led teams to championship victories in national competitions by applying advanced CAD tools and simulation software. My rigorous academic background is bolstered by certifications in SolidWorks, Autodesk Fusion 360, and more, ensuring precision in design and analysis. Throughout my career, I have effectively bridged the gap between theory and practice, notably during my internship with South Central Railways, enhancing operational safety and efficiency.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Engineering Design</span><br>Developing mechanical components and systems using industry-standard tools</li>
+                        <li><span>CAD/CAM Software</span><br>Proficient in SolidWorks, Autodesk Fusion 360, AutoCAD, Siemens NX, and CATIA V5</li>
+                        <li><span>App Development</span><br>Computational analysis including Ansys Workbench for Structural and Thermal Simulation</li>
+                        <li><span>Design for Excellence (DfX)</span><br>Applying DfX methodologies to optimize all aspects of design</li>
+                        <li><span>Geometric Dimensioning & Tolerancing (GD&T)</span><br>ASME Y14.5 2018 standards for precise and effective communication of design intent</li>
+                        <li><span>Programming Languages</span><br>Knowledge of Python and SQL for data analysis, automation, and database management</li>
+                        <li><span>Office Productivity Tools</span><br>Proficient in Microsoft Office Suite (Word, Excel, PowerPoint, Outlook)</li>
+                        <li><span>Design Review & Evaluation</span><br>Conducting thorough design reviews to ensure objectives and regulations are met</li>
+                        <li><span>Sheet Metal Design</span><br>Specialized knowledge in designing with sheet metal, focusing on manufacturability and functionality</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Mar 2024 - Present</span><br>Volunteer(Controls Engineer) at Bright Mind Enrichment and Schooling (BME)</li>
+                        <li><span>July 2017 - Jan 2020</span><br>Designer and Brakes Engineer at K L University</li>
+                        <li><span>May 2019 - Sep 2019</span><br>Internship at South Central Railways.</li>
+                        <li><span>May 2020 - Sep 2020</span><br>Volunteer(Technical Inspector) at Imperial Society of Innovative Engineers (ISIE)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2024 (Graduated)</span><br>MS in Automation and Robotics from SUNY University at Buffalo.</li>
+                        <li><span>2016 - 2020</span><br>BS in Mechanical Engineering from K L University.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.JPG">
+                <div class="layer">
+                    <h3>Design of Quad Bike(ATV)</h3>
+                    <p>Engineered a high-performance All-Terrain Vehicle (ATV) with advanced CAD tools, achieving top-tier results in national design competitions. Explore the detailed design process and innovation behind this Quad Bike.</p>
+                    <a href="quad-bike-details.html" target="_blank" class="external-link"><i class="learn-more-btn">Learn More</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Design of Brake Rotor(Disc Brake)</h3>
+                    <p>Utilizing the sophisticated design capabilities of Solidworks and the thermal analysis power of Ansys Workbench, I developed a brake rotor that achieved an unprecedented 74% efficiency, establishing a new high in brake rotor engineering.</p>
+                    <a href="Brakes.html" target="_blank" class="external-link" ><i class="learn-more-btn">Learn More</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <!-- <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you yo the talented people around the world. Download it from play store.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a> -->
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Solidworks Certi.png">
+                <div class="layer">
+                    <h3>SolidWorks Associate(CSWA)</h3>
+                    <p>Certified SolidWorks Associate in Mechanical Design by Solidworks(Dassualt Systems)</p>
+                    <a href="https://drive.google.com/file/d/1EqMhx0s3CM89s9q_ya4YMwgbBhBO4j6t/view?usp=sharing" target="_blank" class="external-link"><i class="learn-more-btn">View Certificate</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/SixSigmaGreen belt.png">
+                <div class="layer">
+                    <h3>Six Sigma Green Belt</h3>
+                    <p>Six Sigma Green Belt by Lynda(LinkedIn Learning) and Have Mastered advanced techniques in problem-solving and process improvement through the Six Sigma Green Belt certification, focusing on 5S and other methodologies to enhance operational efficiency.</p>
+                    <a href="https://drive.google.com/file/d/1knBmdbrTxqJCCf84AsT7ZUjIEodjTSJc/view?usp=sharing" target="_blank" class="external-link"><i class="learn-more-btn">View Certificate</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Design for Sustainability.png">
+                <div class="layer">
+                    <h3>Design for Sustainability(ASME)</h3>
+                    <p>Enhanced my ability to integrate sustainability into mechanical design, ensuring all projects contribute positively to environmental conservation and meet global sustainability standards..</p>
+                    <a href="https://drive.google.com/file/d/17niMvc9DFTnLGy_BRtDt32cyLc3jnt4r/view?usp=sharing" target="_blank" class="external-link"><i class="learn-more-btn">View Certificate</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list more-certificates" id="more-certificates">
+            <div class="work">
+                <img src="images/Autocad.png">
+                <div class="layer">
+                    <h3>CAD and Digital Manufacturing</h3>
+                    <p>Acquired hands-on experience in 3D model creation, integrated CAD/CAM/CAE, and the engineering design process, equipping me with advanced skills for tackling complex design and manufacturing challenges using Autodesk Fusion 360</p>
+                    <a href="https://drive.google.com/file/d/1pFSjYXi7b1N09BBBOeKUi3HMqL2V99PH/view?usp=sharing" target="_blank" class="external-link"><i class="learn-more-btn">View Certificate</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ASME.png">
+                <div class="layer">
+                    <h3>Introduction to Industry 4.0 and Technologies</h3>
+                    <p>Explored foundational concepts of Industry 4.0, including IoT and smart manufacturing, through the ASME certification. Gained insights into leveraging digital transformation to optimize manufacturing processes and increase operational efficiency.</p>
+                    <a href="https://drive.google.com/file/d/1b_44w0imXCL-zxAiLxFqzbg2dEcNC623/view?usp=sharing" target="_blank" class="external-link"><i class="learn-more-btn">View Certificate</i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/GD&T.png">
+                <div class="layer">
+                    <h3>Geometric Dimensioning and Tolerancing</h3>
+                    <p>I mastered critical techniques to enhance precision in product design. This training equipped me with the skills to apply stringent specifications and ensure consistent part manufacturability and interchangeability, facilitating a robust understanding of complex engineering designs.</p>
+                    <a href="https://drive.google.com/file/d/1v2ahpwIfb6dr9Tsm_M3l7l3GCdvTib4G/view?usp=sharing" target="_blank" class="external-link"><i class="learn-more-btn">View Certificate</i></a>
+                </div>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="btn" onclick="toggleMoreCertificates()">See more</a>
+    </div>
+</div>
+
+<script>
+    const moreCertificates = document.getElementById("more-certificates");
+    let isMoreVisible = false;
+
+    function toggleMoreCertificates() {
+        if (isMoreVisible) {
+            moreCertificates.style.display = "none";
+            event.target.innerHTML = "See more";
+        } else {
+            moreCertificates.style.display = "flex";
+            event.target.innerHTML = "See less";
+        }
+        isMoreVisible = !isMoreVisible;
+    }
+
+    // Initially hide the more certificates section
+    moreCertificates.style.display = "none";
+</script>
+
+<!-- ----------contact------------- -->
+<div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> saikarth@buffalo.edu</p>
+                <p><i class="fas fa-paper-plane"></i> chagantisaikarthik@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +1 (240) 796-3142</p>
+                <div class="social-icons">
+                    <!-- <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a> -->
+                    <a href="https://www.instagram.com/sai.karthik.reddy.chaganti/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/saikarthikreddychaganti/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1PX1wlT5y5w5BtM4xoH1OCAe0WIhAbTed/view?usp=sharing" target="_blank" download class="btn btn2">Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Karthik. Made with <i class="fas fa-heart"></i> by <a href="">Sai Karthik Reddy</a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby8OV032kLBzwyYhs4YzwQ0EwPyUeWz7J_Lkeo1zVfHrwu2q98idCZdkxOY4rGDZ8Jv/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
